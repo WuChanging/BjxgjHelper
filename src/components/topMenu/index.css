@@ -1,0 +1,96 @@
+:root {
+	--menu-bg: #ffffff47;
+	--menu-shadow: #a3a3a3;
+	--menu-text: black;
+	--menu-active: #1677ff;
+	--menu-hover: #e4e4e4;
+	--menu-height: 3rem;
+}
+
+.top-menu-placeholder {
+	height: calc(var(--menu-height) + 1rem);
+}
+
+.top-menu {
+	z-index: 101;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	width: fit-content;
+	height: var(--menu-height);
+	align-items: center;
+	background-color: transparent;
+	transition: .5s;
+}
+
+.top-menu .back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	background-color: var(--menu-bg);
+	box-shadow: 0 0 .25rem var(--menu-shadow);
+	height: calc(var(--menu-height) - .5rem);
+	width: calc(var(--menu-height) - .5rem);
+	margin-right: 1rem;
+	border-radius: 100%;
+	animation: scaleUpHalf .75s;
+	backdrop-filter: blur(.3rem);
+}
+.top-menu .back i {
+	margin: 0;
+}
+
+.top-menu .back:hover {
+	color: #1677ff;
+	cursor: pointer;
+	background-color: var(--menu-hover);
+	transition: .5s;
+}
+
+.top-menu-navigations {
+	display: flex;
+	height: 100%;
+	background: radial-gradient(circle, var(--menu-bg) 100%, var(--menu-bg) 0%);
+	border-radius: .5rem;
+	backdrop-filter: blur(.2rem);
+	box-shadow: 0 0 .5rem var(--menu-shadow);
+}
+
+.top-menu .top-menu-navigations .nav {
+	width: 6.5rem; /* 标签宽度 */
+	color: var(--menu-text);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 .5rem;
+	border-radius: .25rem;
+	transition: .5s;
+}
+
+.top-menu .top-menu-navigations .right-navs {
+	animation: popFromLeft .75s;
+}
+
+@keyframes popFromLeft {
+	from {
+		transform: scale(0%);
+		margin-left: -4.5rem;
+		border-radius: 2rem;
+	} to {
+		transform: scale(100%);
+		margin-left: 0;
+		border-radius: .25rem;
+	}
+}
+
+.top-menu .top-menu-navigations .nav:hover {
+	background-color: var(--menu-hover);
+}
+
+.top-menu .top-menu-navigations .active {
+	color: var(--menu-active);
+	font-weight: bold;
+}

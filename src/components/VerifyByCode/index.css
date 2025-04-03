@@ -1,0 +1,56 @@
+.border-flowing-lines {
+	width: 20rem;
+	height: 10rem;
+	border-radius: .5rem;
+	overflow: hidden;
+	background-color: #1678c22b;
+	transition: .5s;
+}
+
+.border-flowing-lines::before,
+.border-flowing-lines::after {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 20rem;
+	height: 20rem;
+	transform-origin: bottom right;
+	background: linear-gradient(0deg, transparent, #1678c2);
+	animation: rotate-self 6s ease-in-out infinite;
+	transition: 1s;
+}
+
+.border-flowing-lines::after {
+	animation-delay: -3s;
+}
+
+@keyframes rotate-self {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.border-flowing-lines form {
+	inset: .2rem;
+	z-index: 2;
+	position: absolute;
+	background: white;
+	padding: 2rem;
+	border-radius: .5rem;
+	transition: .5s;
+}
+
+.border-flowing-lines-error.border-flowing-lines::before,
+.border-flowing-lines-error.border-flowing-lines::after {
+	background: linear-gradient(0deg, transparent, #ff5151);
+}
+.border-flowing-lines-error form {
+	background-color: #ffd5d5;
+}
+.border-flowing-lines-error.border-flowing-lines {
+	background-color: #ffd5d5;
+}
+.border-flowing-lines-error.border-flowing-lines .inputBox span {
+	background-color: #ffd5d5;
+}

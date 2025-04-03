@@ -1,0 +1,58 @@
+#hw-block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.user-blocks {
+	z-index: 1;
+	border-radius: 0.7em;
+	padding: 1rem;
+	font-size: 1.2rem;
+	box-shadow: 0.1rem 0.1rem 1rem #9f9f9f87;
+	border: solid .2rem transparent;
+	margin-bottom: 1rem;
+}
+
+.user-blocks:hover {
+	z-index: 9;
+	border: solid .2rem royalblue;
+	box-shadow: .1rem .1rem 1rem gray;
+	transition: .7s;
+}
+
+.user-name-blocks:hover>.borders {
+	background-color: #3f51b5b3;
+	transition: .5s;
+}
+
+.file_download_block:hover {
+	border-radius: .8rem;
+	background-color: #ff5722a3;
+	transition: .5s;
+}
+
+@media only screen and (max-width: 900px) {
+	.user-blocks {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.user-blocks {
+		width: 46%;
+	}
+}
+
+@media only screen and (min-width: 1355px) {
+	.user-blocks {
+		width: 30%;
+	}
+}
+
+@media only screen and (min-width: 1840px) {
+	.user-blocks {
+		width: 22%;
+	}
+}

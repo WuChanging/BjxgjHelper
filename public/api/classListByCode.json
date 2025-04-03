@@ -1,0 +1,38 @@
+{
+  "4b83db4a2929e69a252bc5cf572de88266edb28264fc7adbfdfd12f02c96cfd2": [
+    {
+      "name": "班级名称",
+      "openId": "教师 openId",
+      "classId": [
+        "班级 Id"
+      ],
+      "headTeacher": "班级班主任名字（可放空）",
+      "introduction": "班级介绍内容（可放空）"
+    },
+    {
+      "name": "班级名称",
+      "openId": "学生 openId",
+      "memberId": "memberId:memberId（支持冒号叠加 memberId）",
+      "headTeacher": "班级班主任名字（可放空）",
+      "introduction": "班级介绍内容（可放空）"
+    }
+  ],
+  "4c23887402a72e02a273fe95361f6e5941fbf7ef0e33e7208668a410f2051d1d": [
+    {
+      "name": "班级名称",
+      "openId": "教师 openId",
+      "classId": [
+        "班级 Id"
+      ],
+      "headTeacher": "班级班主任名字（可放空）",
+      "introduction": "班级介绍内容（可放空）"
+    },
+    {
+      "name": "班级名称",
+      "openId": "学生 openId",
+      "memberId": "memberId:memberId（支持冒号叠加 memberId）",
+      "headTeacher": "班级班主任名字（可放空）",
+      "introduction": "班级介绍内容（可放空）"
+    }
+  ]
+}

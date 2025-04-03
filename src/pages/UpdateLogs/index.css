@@ -1,0 +1,17 @@
+#update-logs {
+	max-width: 50rem;
+	padding: 2rem;
+}
+
+#update-logs h3:before {
+	content: '# ';
+	color: gray;
+}
+
+#update-logs h3:nth-child(n+2) {
+	margin-top: 1rem;
+}
+
+#update-logs h4 {
+	margin-left: 2rem;
+}
